@@ -35,6 +35,9 @@
     ==================================== -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 
+    <!-- AOS ANIMATIONS CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+
     <!-- ====================================
     CUSTOM STYLESHEET CSS
     ==================================== -->
@@ -45,6 +48,7 @@
     <link rel="stylesheet" href="assets/css/responsive.css">
     <link rel="stylesheet" href="assets/css/animations.css">
     <link rel="stylesheet" href="assets/css/dropdown.css">
+    <link rel="stylesheet" href="assets/css/home.css">
 </head>
 <body>
     <!-- ====================================
@@ -228,6 +232,169 @@
             <div class="swiper-button-prev"></div>
             <!-- Swiper Pagination -->
             <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <!-- ====================================
+    HOME EXTRA SECTIONS (SAMBUTAN, STATISTIK, VISI & MISI, KEUNGGULAN, CTA)
+    Inserted below Hero per request. Uses Bootstrap grid and AOS attributes.
+    ==================================== -->
+    <section class="welcome-section py-5" id="sambutan">
+        <div class="container">
+            <div class="row align-items-center g-4">
+                <div class="col-lg-4" data-aos="fade-right">
+                    <div class="headmaster-photo">
+                        <img src="assets/images/headmaster.jpg" alt="Kepala Sekolah" class="img-fluid rounded">
+                    </div>
+                </div>
+                <div class="col-lg-8" data-aos="fade-left">
+                    <h2 class="section-title">Sambutan Kepala Sekolah</h2>
+                    <p>Assalamu'alaikum warahmatullahi wabarakatuh. Selamat datang di UPT SDN 53 Pinrang. Kami berkomitmen menyediakan pendidikan yang bermutu dan berkarakter.</p>
+                    <p>Kami terus berupaya meningkatkan kualitas pembelajaran melalui kurikulum inovatif, kegiatan ekstrakurikuler, dan pembinaan karakter.</p>
+                    <p>Terima kasih atas dukungan orang tua dan masyarakat. Mari bersama-sama mendukung tumbuhnya generasi cerdas dan berakhlak.</p>
+                    <a href="#profil" class="btn btn-outline-primary mt-3">Selengkapnya</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="home-statistics py-5 bg-light" id="home-statistik">
+        <div class="container">
+            <div class="section-header text-center mb-4" data-aos="fade-up">
+                <h2 class="section-title">Statistik Sekolah</h2>
+                <p class="section-subtitle">Angka terkini dari UPT SDN 53 Pinrang</p>
+            </div>
+            <div class="row text-center g-4">
+                <div class="col-6 col-md-3" data-aos="zoom-in" data-aos-delay="50">
+                    <div class="stat-box p-4">
+                        <i class="bi bi-person-badge display-6 text-primary"></i>
+                        <h3 class="counter" data-target="45">0</h3>
+                        <p>Guru</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="stat-box p-4">
+                        <i class="bi bi-people-fill display-6 text-primary"></i>
+                        <h3 class="counter" data-target="850">0</h3>
+                        <p>Siswa</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3" data-aos="zoom-in" data-aos-delay="150">
+                    <div class="stat-box p-4">
+                        <i class="bi bi-door-open display-6 text-primary"></i>
+                        <h3 class="counter" data-target="28">0</h3>
+                        <p>Rombel</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="stat-box p-4">
+                        <i class="bi bi-award display-6 text-primary"></i>
+                        <h3 class="counter" data-target="127">0</h3>
+                        <p>Prestasi</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="visi-misi-section py-5" id="visi-misi">
+        <div class="container">
+            <div class="row g-4 align-items-stretch">
+                <div class="col-md-6" data-aos="fade-up">
+                    <div class="card shadow-sm h-100 p-4">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="bi bi-eye-fill fs-2 text-primary me-3"></i>
+                                <h4 class="card-title mb-0">Visi</h4>
+                            </div>
+                            <p>Menjadi lembaga pendidikan unggul yang mencetak generasi cerdas, beriman, dan berakhlaq mulia.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card shadow-sm h-100 p-4">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="bi bi-list-check fs-2 text-primary me-3"></i>
+                                <h4 class="card-title mb-0">Misi</h4>
+                            </div>
+                            <ul>
+                                <li>Menyelenggarakan pendidikan yang berkualitas dan merata.</li>
+                                <li>Meningkatkan kompetensi guru melalui pelatihan berkelanjutan.</li>
+                                <li>Membentuk karakter peserta didik yang disiplin dan bertanggung jawab.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="keunggulan-section py-5 bg-white" id="keunggulan">
+        <div class="container">
+            <div class="section-header text-center mb-5" data-aos="fade-up">
+                <h2 class="section-title">Keunggulan Sekolah</h2>
+                <p class="section-subtitle">Fasilitas dan program unggulan kami</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4" data-aos="flip-left">
+                    <div class="adv-card p-4 h-100">
+                        <i class="bi bi-person-badge fs-2 text-primary mb-3"></i>
+                        <h5>Guru Berkualitas</h5>
+                        <p>Pengajar bersertifikat dan berdedikasi.</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="flip-left" data-aos-delay="50">
+                    <div class="adv-card p-4 h-100">
+                        <i class="bi bi-book fs-2 text-primary mb-3"></i>
+                        <h5>Perpustakaan Digital</h5>
+                        <p>Akses sumber belajar 24 jam.</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="flip-left" data-aos-delay="100">
+                    <div class="adv-card p-4 h-100">
+                        <i class="bi bi-microscope fs-2 text-primary mb-3"></i>
+                        <h5>Laboratorium</h5>
+                        <p>Fasilitas lengkap untuk eksperimen dan praktik.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4" data-aos="flip-left" data-aos-delay="150">
+                    <div class="adv-card p-4 h-100">
+                        <i class="bi bi-leaf fs-2 text-primary mb-3"></i>
+                        <h5>Lingkungan Asri</h5>
+                        <p>Area sekolah yang hijau dan mendukung pembelajaran.</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="flip-left" data-aos-delay="200">
+                    <div class="adv-card p-4 h-100">
+                        <i class="bi bi-award fs-2 text-primary mb-3"></i>
+                        <h5>Prestasi Akademik</h5>
+                        <p>Siswa berprestasi di tingkat kabupaten dan provinsi.</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="flip-left" data-aos-delay="250">
+                    <div class="adv-card p-4 h-100">
+                        <i class="bi bi-people fs-2 text-primary mb-3"></i>
+                        <h5>Ekstrakurikuler</h5>
+                        <p>Bervariasi, dari olahraga hingga seni dan sains.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ppdb-cta-section py-5 text-white" id="ppdb-cta" style="background:#0d6efd;">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-8" data-aos="fade-right">
+                    <h2 class="mb-0">PPDB - Penerimaan Peserta Didik Baru</h2>
+                    <p class="mb-0">Daftarkan putra-putri Anda sekarang untuk bergabung di UPT SDN 53 Pinrang.</p>
+                </div>
+                <div class="col-md-4 text-md-end" data-aos="fade-left">
+                    <a href="#ppdb" class="btn btn-light btn-lg">Daftar Sekarang</a>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -832,6 +999,9 @@
     ==================================== -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
+    <!-- AOS ANIMATIONS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
     <!-- ====================================
     CUSTOM JAVASCRIPT
     ==================================== -->
@@ -839,5 +1009,6 @@
     <script src="assets/js/menu.js"></script>
     <script src="assets/js/slider.js"></script>
     <script src="assets/js/animations.js"></script>
+    <script src="assets/js/counter.js"></script>
 </body>
 </html>

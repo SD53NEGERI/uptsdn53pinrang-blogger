@@ -1,0 +1,51 @@
+/* Home-specific styles: Sambutan, Statistik, Visi & Misi, Keunggulan, PPDB CTA */
+
+.welcome-section .headmaster-photo img{
+    max-width:100%;
+    border-radius:12px;
+    box-shadow: 0 8px 20px rgba(13,110,253,0.12);
+}
+
+.welcome-section .section-title{
+    font-size:1.8rem;
+    margin-bottom:1rem;
+}
+
+.home-statistics .stat-box{
+    background: #fff;
+    border-radius:12px;
+    transition: transform .25s ease, box-shadow .25s ease;
+}
+.home-statistics .stat-box:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(13,110,253,0.08);
+}
+.home-statistics .stat-box .counter{
+    font-size:2rem;
+    font-weight:700;
+    margin:0.5rem 0;
+}
+
+.visi-misi-section .card{
+    border: none;
+}
+
+.adv-card{
+    border-radius:12px;
+    transition: transform .25s ease, box-shadow .25s ease;
+    background: #f8fafc;
+}
+.adv-card:hover{
+    transform: translateY(-8px) scale(1.01);
+    box-shadow: 0 18px 40px rgba(2,6,23,0.06);
+}
+
+.ppdb-cta-section{
+    border-radius:8px;
+}
+
+@media (max-width:767px){
+    .welcome-section .headmaster-photo{ text-align:center; }
+    .welcome-section .headmaster-photo img{ width:220px; }
+    .ppdb-cta-section .text-md-end{ text-align:center!important; margin-top:1rem; }
+}
