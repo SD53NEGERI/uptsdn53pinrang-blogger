@@ -49,6 +49,7 @@
     <link rel="stylesheet" href="assets/css/animations.css">
     <link rel="stylesheet" href="assets/css/dropdown.css">
     <link rel="stylesheet" href="assets/css/home.css">
+    <link rel="stylesheet" href="assets/css/news.css">
 </head>
 <body>
     <!-- ====================================
@@ -232,6 +233,55 @@
             <div class="swiper-button-prev"></div>
             <!-- Swiper Pagination -->
             <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <!-- ====================================
+    BERITA TERBARU SECTION
+    ==================================== -->
+    <section class="news-section py-5" id="berita">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <h2 class="section-title">Berita & Informasi</h2>
+                <p class="section-subtitle">Informasi terbaru sekolah</p>
+            </div>
+
+            <!-- News cards placeholder, populated oleh JavaScript -->
+            <div class="row g-4" id="newsCardsContainer"></div>
+
+            <div class="text-center mt-4">
+                <a href="#" class="btn btn-outline-primary btn-lg btn-news">Lihat Semua Berita</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====================================
+    PENGUMUMAN SECTION
+    ==================================== -->
+    <section class="announcement-section py-5 bg-light" id="pengumuman">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <h2 class="section-title">Pengumuman</h2>
+                <p class="section-subtitle">Informasi penting untuk siswa dan orang tua</p>
+            </div>
+            <div class="row g-4" id="announcementCardsContainer">
+                <!-- Announcement cards akan dirender oleh JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ====================================
+    DOWNLOAD RESOURCES SECTION
+    ==================================== -->
+    <section class="download-resource-section py-5" id="download-resources">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <h2 class="section-title">Download</h2>
+                <p class="section-subtitle">Dokumen penting yang dapat diunduh</p>
+            </div>
+            <div class="row g-4" id="downloadCardsContainer">
+                <!-- Download resource cards akan dirender oleh JavaScript -->
+            </div>
         </div>
     </section>
 
@@ -1044,6 +1094,7 @@
     CUSTOM JAVASCRIPT
     ==================================== -->
     <script src="assets/js/app.js"></script>
+    <script src="assets/js/news.js"></script>
     <script src="assets/js/menu.js"></script>
     <script src="assets/js/slider.js"></script>
     <script src="assets/js/animations.js"></script>
